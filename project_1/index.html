@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html> 
+<head>
+      <meta charset="utf-8">
+      <title>index</title>
+	  <style type = "text/css">
+	  
+	    body{ overflow-x: hidden;
+		      height:100%; 
+			  background-image: url("background.png");}
+		
+		section  { position: absolute;
+                  right: 50px; 
+                  top: 50px; }
+		
+				
+	             
+	    nav             {  font-weight: bold;
+                           width: 8%;
+						   position:absolute;
+						   top: 140px;
+						   text-align: center;
+ 						   z-index:20;
+						    }
+						   
+		nav a            { text-decoration: none; 
+		                   color:white;}
+        nav ul           {  display: none;
+                           list-style: none;
+                           margin: 0;
+                           padding:0; 
+						   background-color: LightBlue;
+						   
+ 						   }
+	   
+        nav ul li a    {   border-top: 2px solid LightBlue;
+                          
+                           width: 10%;
+						  
+						   text-align: center; 
+						 
+						   }
+						   
+						   
+        nav:hover ul    { display: block;  }     
+		
+        nav ul li a:hover { color:black ;  }
+		                 
+                           	
+		 
+		article              { top: 180px; 
+		                       position:absolute;
+							   z-index:1; 
+ 							   }
+						
+		#div2           {  padding:1% 0 3% 0;
+		                    background-color: LightBlue; 
+							
+		                }
+		img:hover       { transform: scale(1.1); }    
+		
+        aside           {margin-left:11em; 
+		                 margin-top:1em; 
+		                 width:970px;
+		                 height:80px; 
+                         background-color:rgb(176,196,222);
+						 border:1px solid #DDA0DD;
+						}
+
+        #d3, #d4		{text-align:center; 
+		                 font-family:Impact; 
+						 font-size:2em; }
+        #d4 a          {text-decoration:none;}
+                         	
+        #d4 a:hover    {color:red; 	}		
+     
+		td img         { width: 300px;
+                         height: 300px; }
+		td              {padding-right:2em;
+                         padding-bottom:2em; 		}
+		table          {margin-left:11em; }
+		th             {font-family:cursive;}
+	  </style>
+   </head>
+    <header> 
+	<section>Search: 
+       <input name = "search" type = "search"  size = "20">
+    </section>
+	<div id="div1"><a href = "index.html"><img src = "logo.png" alt = "the logo picture" /></a></div> <hr>
+	</header>
+   
+   
+   <body>
+  
+	<div id="div2">
+	<nav style= "left:1%;"><a href="index.html">Home</a></nav>
+	<nav style= "left:9%;"><a href="keynote.html">Keynote</a></nav>
+	<nav style= "left:16%;"><a href="general.html">General Information</a>
+	     <ul>
+            <li><a href = "general.html" name = "p1">About the Conference</a></li>
+            <li><a href = "general.html" name = "p2">Conference Fee</a></li>
+            <li><a href = "general.html" name = "p3">Hotel Information</a></li>
+         </ul>
+	
+	
+	</nav>
+	<nav style= "left:24%;"><a href="call.html">Call For Paper</a>
+	 <ul>
+            <li><a href = "https://en.wikipedia.org/wiki/Computer_security" >Computer Security</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Artificial_intelligence" >Artificial<wbr>Intelligent</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Software_engineer" >Software<wbr>Engineering</a></li>
+			<li><a href = "https://en.wikipedia.org/wiki/Parallel_processing" >Parallel<wbr>processing</a></li>
+			<li><a href = "https://en.wikipedia.org/wiki/Cloud_computing" >Clouding<wbr>Computing</a></li>
+			<li><a href = "https://en.wikipedia.org/wiki/Semantic_Web" >Sematic Web</a></li>
+         </ul>
+	
+	</nav>
+	<nav style= "left:32%;"><a href="date.html">Important Dates</a></nav>
+	<nav style= "left:40%;"><a href="major.html">Major Areas</a></nav>
+	<nav style= "left:48%;"><a href="submit.html">Paper Submission</a></nav>
+	<nav style= "left:56%;"><a href="login.html">Reviewer Login</a></nav>
+	<nav style= "left:64%;"><a href="registration.html">Online Registration</a></nav>
+	<nav style= "left:72%;"><a href="program.html">Conference Program</a></nav>
+	<nav style= "left:80%;"><a href="https://www.elsevier.com/journals/learning-and-instruction/0959-4752/guide-for-authors">Guidelines</a></nav>
+	<nav style= "left:88%;"><a href="contact.html">Contact Us</a></nav> 
+	</div>
+	
+
+   <aside>
+   
+   <div id="d3">Holiday Book Sales</div>
+   <div id="d4"><a href="bookstore/index.php"><b>Book Store</b></a></div>
+   </div>
+ 
+   </aside>
+  
+	<table>
+	<tr><th>Communication</th> <th>Revolution</th> <th>Innovation</th></tr>
+	<tr>
+	    <td><img src = "index_image/communication.png" alt = "communication" /></td>
+	    <td><img src = "index_image/revolution.png" alt = "revolution" /></td>
+		<td><img src = "index_image/innovation.png" alt = "innovation" /></td>
+	</tr>
+	<tr>
+	<td><img src = "index_image/c2.png" alt = "communication" /></td>
+	<td><img src = "index_image/r2.png" alt = "revolution" /></td>
+    <td><img src = "index_image/i2.png" alt = "innovation" /></td>
+	
+	</tr>
+	</table>
+
+
+   </body>
+      
+  <footer>
+  <hr>
+  &copy WORLD COMP'2017.
+  </footer>
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+</html>

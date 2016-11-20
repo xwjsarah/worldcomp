@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="utf-8">
+      <title>registration</title>
+	  <style type = "text/css">
+	  
+	   body{ overflow-x: hidden;
+		 height:100%; }
+		
+           section  { position: absolute;
+                  right: 50px; 
+                  top: 50px; }
+		
+				
+	    nav    {  font-weight: bold;
+                      color: white;
+                      border: 2px solid LightBlue;
+                      width: 8%;
+		      position:absolute;
+		      top: 140px;
+		      text-align: center;
+ 		      z-index:20;
+				  }
+						   
+	    nav a   { text-decoration: none; 
+		                   color:white;}
+        nav ul      {  display: none;
+                       list-style: none;
+                       margin: 0;
+                       padding:0; 
+		       background-color: LightBlue;
+						   
+ 						   }
+	   
+        nav ul li a {   border-top: 2px solid LightBlue;
+                        width: 10%;	  
+			            text-align: center; 
+					}
+						   
+						   
+        nav:hover ul     { display: block;  }     
+		
+        nav ul li a:hover { color:black ;  }
+		                 
+                           	
+		 
+        article           { top: 180px; 
+		            position:absolute;
+			    z-index:1;      } 
+ 							  
+						
+        #div2           {  padding:1% 0 3% 0;
+		           background-color: LightBlue; 
+							
+		                }
+	img:hover       { transform: scale(1.1); }    
+		
+	  #div4         { width: 600px;
+	                  height:900px;
+		              background-color:rgb(232,236,237); 
+				      margin-left: 23em;	
+                      margin-top:5em;
+					  margin-bottom:3em;
+		              border:1px solid #000;
+		                  }
+						 
+      #t1           {
+	                   margin-top:2em; 
+					   margin-left:7em;
+	                } 
+	  #t2           {margin-left:9em;}
+	  
+      #p1  {
+	         text-align:center; 
+	         font-size:2em;
+			 margin-top:1em; 
+	          } 
+	  #p2  {
+	         text-align:center; 
+	       }
+	  </style>
+   </head>
+   <body>
+    <header> 
+    <section>Search: 
+       <input name = "search" type = "search"  size = "20">
+    </section>
+	<div id="div1"><a href = "index.html"><img src = "logo.png" alt = "the logo picture" /></a></div> <hr>
+	</header>
+   
+	<div id="div2">
+	<nav style= "left:1%;"><a href="index.html">Home</a></nav>
+	<nav style= "left:9%;"><a href="keynote.html">Keynote</a></nav>
+	<nav style= "left:16%;"><a href="general.html">General Information</a>
+	     <ul>
+            <li><a href = "general.html" name = "p1">About the Conference</a></li>
+            <li><a href = "general.html" name = "p2">Conference Fee</a></li>
+            <li><a href = "general.html" name = "p3">Hotel Information</a></li>
+         </ul>
+	
+	
+	</nav>
+	<nav style= "left:24%;"><a href="call.html">Call For Paper</a>
+	 <ul>
+            <li><a href = "https://en.wikipedia.org/wiki/Computer_security" >Computer Security</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Artificial_intelligence" >Artificial<wbr>Intelligent</a></li>
+            <li><a href = "https://en.wikipedia.org/wiki/Software_engineer" >Software<wbr>Engineering</a></li>
+			<li><a href = "https://en.wikipedia.org/wiki/Parallel_processing" >Parallel<wbr>processing</a></li>
+			<li><a href = "https://en.wikipedia.org/wiki/Cloud_computing" >Clouding<wbr>Computing</a></li>
+			<li><a href = "https://en.wikipedia.org/wiki/Semantic_Web" >Sematic Web</a></li>
+         </ul>
+	
+	</nav>
+	<nav style= "left:32%;"><a href="date.html">Important Dates</a></nav>
+	<nav style= "left:40%;"><a href="major.html">Major Areas</a></nav>
+	<nav style= "left:48%;"><a href="submit.html">Paper Submission</a></nav>
+	<nav style= "left:56%;"><a href="login.html">Reviewer Login</a></nav>
+	<nav style= "left:64%;"><a href="registration.html">Online Registration</a></nav>
+	<nav style= "left:72%;"><a href="program.html">Conference Program</a></nav>
+	<nav style= "left:80%;"><a href="https://www.elsevier.com/journals/learning-and-instruction/0959-4752/guide-for-authors">Guidelines</a></nav>
+	<nav style= "left:88%;"><a href="contact.html">Contact Us</a></nav> 
+	</div>
+	
+	<p id="p1">
+	Online Registration
+	</p>
+	<article id="main">
+	<div id="div4">
+	<form method = "post" action = "registration.php" autocomplete = "on">
+	  <table id="t1">  
+           <tr> <td><label>Firstname:</label></td> <td><input type = "text" name="Firstname" required /></td>  </tr>
+           <tr><td><label>Lastname:</label></td> <td><input type = "text" name="Lastname" required /></td></tr>
+           <tr><td><label>Company or organization: </label></td> <td><input type = "text" name="company" required /></td></tr>
+           <tr><td><label> Title:</label></td><td><input type = "text" name="title"></td>  </tr>
+	       <tr><td><label>Address: </label></td> <td><input type = "text" placeholder = "1 Normal Ave" name="address" required /></td></tr>
+	       <tr><td><label>City: </label></td> <td><input type = "text" name="city" required/></td></tr>
+	       <tr><td><label>State:</label></td><td><input type = "text" placeholder = "NJ" name="state" required /></td></tr>  
+           <tr><td><label>Zip#: </label></td> <td><input type = "number" name="zip" placeholder = "07034" required /></td></tr>
+           <tr><td><label>Phone:</label></td> <td><input type = "tel" name="phone" placeholder = "(###) ###-####" required /></td></tr>
+		   <tr><td><label>Email: </label></td><td><input type = "email" name="email" placeholder = "name@domain.com" required /></td></tr>
+	 
+	       <tr> <td><label> Occupation: </label></td>
+           <td> <p><input type="radio" name="occupation" value="Presenter" checked> Presenter</p>
+                <p><input type="radio" name="occupation" value="Student"> Student</p>
+                <p><input type="radio" name="occupation" value="Regular_Attendee"> Regular attendee</p>
+	            <p><input type="radio" name="occupation" value="Other"> Other</p>
+           </td>
+            </tr>
+		   </table>
+		   <details>
+		   <summary><h1>Payment</h1></summary>
+		   <table id="t2">
+		   
+		   <tr><td><label> Card Type:</label></td>
+		   <td>
+		    <p> <input type="radio" name="Cardtype" value="1" checked> Visa</p>
+            <p><input type="radio" name="Cardtype" value="2"> MasterCard</p>
+            <p><input type="radio" name="Cardtype" value="3"> Discover</p>
+	        <p><input type="radio" name="Cardtype" value="4"> America Express</p>
+		   </td> </tr>
+		   <tr><td><label>Card Number: </label></td><td> <input type="number" name="cardnumber" maxlength="16" required /></td></tr>
+		   <tr><td><p><label>Expiration date: </label></td><td> <input type="date" name="expirationdate" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" required /></td></tr>
+		   <tr><td><label>Billing Address: </label></td><td><input type="text" name="billingadd" required /></td></tr>
+		   
+		   </table>
+		   <p id="p2"><input type = "submit" value = "Submit" /> <input type = "reset" value = "Clear" /></p> 
+		   </details>
+          </form>
+		  <p><span style= "color:red; ">Pay information, please refer to <a href="general.html">general information></a>. </span></p>
+	      </div>
+	
+	
+	</article>
+
+   </body>
+
+</html>
+
